@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "TrackerLibrary": {
+      "commandName": "Project",
+      "nativeDebugging": true
+    }
+  }
+}
