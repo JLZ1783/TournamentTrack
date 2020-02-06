@@ -72,11 +72,11 @@
     </Compile>
     <Compile Include="IPrizeRequester.cs" />
     <Compile Include="ITeamRequester.cs" />
-    <Compile Include="Tournament Viewer.cs">
+    <Compile Include="TournamentViewer.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Tournament Viewer.Designer.cs">
-      <DependentUpon>Tournament Viewer.cs</DependentUpon>
+    <Compile Include="TournamentViewer.Designer.cs">
+      <DependentUpon>TournamentViewer.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -106,8 +106,8 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Tournament Viewer.resx">
-      <DependentUpon>Tournament Viewer.cs</DependentUpon>
+    <EmbeddedResource Include="TournamentViewer.resx">
+      <DependentUpon>TournamentViewer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TournamentDashboard.resx">
       <DependentUpon>TournamentDashboard.cs</DependentUpon>

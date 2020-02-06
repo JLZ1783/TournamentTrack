@@ -21,7 +21,7 @@ namespace TrackerUI_2
             TrackerLibrary.GlobalConfig.InitializeConnections(TrackerLibrary.DatabaseType.Sql);
                                                               
 
-            Application.Run(new CreateTournament());
+            Application.Run(new TournamentDashboard());
 
             //Application.Run(new TournamentDashboard());
         }

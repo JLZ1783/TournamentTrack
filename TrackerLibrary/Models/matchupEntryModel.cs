@@ -6,6 +6,8 @@
         /// <summary>
         /// Represents one team in the Matchup.
         /// </summary>
+        /// 
+        public int TeamCompetingId { get; set; }
         public TeamModel TeamCompeting { get; set; }
 
         /// <summary>
@@ -17,6 +19,8 @@
         /// Represents the Matchup that this team came
         /// from as winner
         /// </summary>
+        /// 
+        public int ParentMatchupId { get; set; }
         public MatchupModel ParentMatchup { get; set; }
 
 

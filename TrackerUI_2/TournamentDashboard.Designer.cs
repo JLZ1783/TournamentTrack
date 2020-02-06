@@ -31,10 +31,23 @@
             System.Windows.Forms.Button LoadButton;
             this.HeaderLabel = new System.Windows.Forms.Label();
             this.LoadExistingTournamentLabel = new System.Windows.Forms.Label();
-            this.SelectTournamentDropDown = new System.Windows.Forms.ComboBox();
+            this.LoadExistingTournamentDropDown = new System.Windows.Forms.ComboBox();
             this.CreateTournamentButton = new System.Windows.Forms.Button();
             LoadButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // LoadButton
+            // 
+            LoadButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            LoadButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            LoadButton.ForeColor = System.Drawing.SystemColors.HotTrack;
+            LoadButton.Location = new System.Drawing.Point(176, 130);
+            LoadButton.Name = "LoadButton";
+            LoadButton.Size = new System.Drawing.Size(94, 26);
+            LoadButton.TabIndex = 39;
+            LoadButton.Text = "Load";
+            LoadButton.UseVisualStyleBackColor = true;
+            LoadButton.Click += new System.EventHandler(this.LoadButton_Click);
             // 
             // HeaderLabel
             // 
@@ -58,13 +71,13 @@
             this.LoadExistingTournamentLabel.TabIndex = 17;
             this.LoadExistingTournamentLabel.Text = "Load Existing Tournament";
             // 
-            // SelectTournamentDropDown
+            // LoadExistingTournamentDropDown
             // 
-            this.SelectTournamentDropDown.FormattingEnabled = true;
-            this.SelectTournamentDropDown.Location = new System.Drawing.Point(72, 103);
-            this.SelectTournamentDropDown.Name = "SelectTournamentDropDown";
-            this.SelectTournamentDropDown.Size = new System.Drawing.Size(303, 21);
-            this.SelectTournamentDropDown.TabIndex = 16;
+            this.LoadExistingTournamentDropDown.FormattingEnabled = true;
+            this.LoadExistingTournamentDropDown.Location = new System.Drawing.Point(72, 103);
+            this.LoadExistingTournamentDropDown.Name = "LoadExistingTournamentDropDown";
+            this.LoadExistingTournamentDropDown.Size = new System.Drawing.Size(303, 21);
+            this.LoadExistingTournamentDropDown.TabIndex = 16;
             // 
             // CreateTournamentButton
             // 
@@ -77,18 +90,7 @@
             this.CreateTournamentButton.TabIndex = 38;
             this.CreateTournamentButton.Text = "Create Tournament";
             this.CreateTournamentButton.UseVisualStyleBackColor = true;
-            // 
-            // LoadButton
-            // 
-            LoadButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            LoadButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            LoadButton.ForeColor = System.Drawing.SystemColors.HotTrack;
-            LoadButton.Location = new System.Drawing.Point(176, 130);
-            LoadButton.Name = "LoadButton";
-            LoadButton.Size = new System.Drawing.Size(94, 26);
-            LoadButton.TabIndex = 39;
-            LoadButton.Text = "Load";
-            LoadButton.UseVisualStyleBackColor = true;
+            this.CreateTournamentButton.Click += new System.EventHandler(this.CreateTournamentButton_Click);
             // 
             // TournamentDashboard
             // 
@@ -98,7 +100,7 @@
             this.Controls.Add(LoadButton);
             this.Controls.Add(this.CreateTournamentButton);
             this.Controls.Add(this.LoadExistingTournamentLabel);
-            this.Controls.Add(this.SelectTournamentDropDown);
+            this.Controls.Add(this.LoadExistingTournamentDropDown);
             this.Controls.Add(this.HeaderLabel);
             this.Name = "TournamentDashboard";
             this.Text = "TournamentDashboard";
@@ -111,7 +113,7 @@
 
         private System.Windows.Forms.Label HeaderLabel;
         private System.Windows.Forms.Label LoadExistingTournamentLabel;
-        private System.Windows.Forms.ComboBox SelectTournamentDropDown;
+        private System.Windows.Forms.ComboBox LoadExistingTournamentDropDown;
         private System.Windows.Forms.Button CreateTournamentButton;
     }
 }

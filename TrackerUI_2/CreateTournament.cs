@@ -128,14 +128,16 @@ namespace TrackerUI_2
 
             //TODO Wire up matchups
             TournamentLogic.CreateRounds(tm);
-
-
-
+                        
             //Create Tournament Entry
             //Create all of the prizes entries
             //create all of the team entries
             GlobalConfig.Connection.CreateTournament(tm);
-            
+
+            TournamentViewer frm = new TournamentViewer(tm);
+            frm.Show();
+            this.Close();
+
 
         }
     }
